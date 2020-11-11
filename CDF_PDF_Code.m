@@ -1,7 +1,7 @@
 clear all;
 clc;
 pkg load statistics;
-DATA_exp = load("-ascii", "C:/Users/akeem/Desktop/NS_CDF_PDF/exponential.txt");
+DATA_exp = load("-ascii", "../exponential.txt");
 x_exp = DATA_exp(1002):1.2:DATA_exp(1003);
 figure
 [y_exp,x_exp_] = hist(DATA_exp(1:1001),x_exp);
@@ -24,7 +24,7 @@ xlabel("Midpoint");
 legend("PDF","CDF");
 hold off
 
-DATA_u1 = load("-ascii", "C:/Users/akeem/Desktop/NS_CDF_PDF/uniform1.txt");
+DATA_u1 = load("-ascii", "../uniform1.txt");
 x_u1 = DATA_u1(1002):0.1:DATA_u1(1003);
 figure
 [y_u1,x_u1_] = hist(DATA_u1(1:1001),x_u1);
@@ -40,7 +40,7 @@ xlabel("Midpoint");
 legend("PDF","CDF");
 hold off
 
-DATA_u2 = load("-ascii", "C:/Users/akeem/Desktop/NS_CDF_PDF/uniform2.txt");
+DATA_u2 = load("-ascii", "../uniform2.txt");
 x_u2 = DATA_u2(1002):0.6:DATA_u2(1003);
 figure
 [y_u2,x_u2_] = hist(DATA_u2(1:1001),x_u2);
@@ -56,7 +56,7 @@ xlabel("Midpoint");
 legend("PDF","CDF");
 hold off
 
-DATA_p = load("-ascii", "C:/Users/akeem/Desktop/NS_CDF_PDF/pareto_f.txt");
+DATA_p = load("-ascii", "../pareto_f.txt");
 x_p = DATA_p(1002):1.2:DATA_p(1003);
 [y_p,x_p_] = hist(DATA_p(1:1001),x_p);
 figure
